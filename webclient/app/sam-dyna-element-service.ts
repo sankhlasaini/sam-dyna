@@ -25,6 +25,36 @@ export class SamDynaElementService {
         order: this.SamDynaElementDataService.getSkills().order,
         options: this.SamDynaElementDataService.getSkills().options
       }),
+      new SamDynaChips({
+        key: this.SamDynaElementDataService.getSkills().key,
+        label: this.SamDynaElementDataService.getSkills().lable,
+        order: this.SamDynaElementDataService.getSkills().order,
+        options: this.SamDynaElementDataService.getSkills().options
+      }),
+      new SamDynaIconDiv({
+        key: this.SamDynaElementDataService.getPersonalInfo().key,
+        label: this.SamDynaElementDataService.getPersonalInfo().lable,
+        order: this.SamDynaElementDataService.getPersonalInfo().order,
+        options: this.SamDynaElementDataService.getPersonalInfo().options
+      }),
+      new SamDynaChips({
+        key: this.SamDynaElementDataService.getSkills().key,
+        label: this.SamDynaElementDataService.getSkills().lable,
+        order: this.SamDynaElementDataService.getSkills().order,
+        options: this.SamDynaElementDataService.getSkills().options
+      }),
+      new SamDynaChips({
+        key: this.SamDynaElementDataService.getSkills().key,
+        label: this.SamDynaElementDataService.getSkills().lable,
+        order: this.SamDynaElementDataService.getSkills().order,
+        options: this.SamDynaElementDataService.getSkills().options
+      }),
+      new SamDynaIconDiv({
+        key: this.SamDynaElementDataService.getPersonalInfo().key,
+        label: this.SamDynaElementDataService.getPersonalInfo().lable,
+        order: this.SamDynaElementDataService.getPersonalInfo().order,
+        options: this.SamDynaElementDataService.getPersonalInfo().options
+      }),
 
       new SamDynaDiv({
         key: this.SamDynaElementDataService.getSummary().key,
@@ -32,6 +62,12 @@ export class SamDynaElementService {
         label: this.SamDynaElementDataService.getSummary().lable,
         order: this.SamDynaElementDataService.getSummary().order,
         options: this.SamDynaElementDataService.getSummary().options
+      }),
+      new SamDynaIconDiv({
+        key: this.SamDynaElementDataService.getPersonalInfo().key,
+        label: this.SamDynaElementDataService.getPersonalInfo().lable,
+        order: this.SamDynaElementDataService.getPersonalInfo().order,
+        options: this.SamDynaElementDataService.getPersonalInfo().options
       }),
     ];
 

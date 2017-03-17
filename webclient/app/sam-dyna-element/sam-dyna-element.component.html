@@ -13,11 +13,10 @@
     <div *ngSwitchCase="'iconDiv'">
       <div *ngFor="let opt of element.options">
         <div fxLayout="row" class="elements">
-          <div fxFlex="10" class="dataText">
+          <div fxFlex="40px" class="dataText">
             <i class="material-icons">{{opt.icon}}</i>
           </div>
-          <div fxFlex></div>
-          <div fxFlex="90" class="dataText">
+          <div fxFlex class="dataText">
             {{opt.data}}
           </div>
         </div>
