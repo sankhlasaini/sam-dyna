@@ -10,6 +10,7 @@ import { Md2Module } from 'md2';
 import { SamDynaElementComponent } from './sam-dyna-element/sam-dyna-element.component';
 import { SamDynaViewComponent } from './sam-dyna-view/sam-dyna-view.component';
 import { SamDynaElementService } from './sam-dyna-element-service';
+import { SamDynaElementDataService} from './sam-dyna-element-data-service';
 
 @NgModule({
   imports: [
@@ -22,7 +23,8 @@ import { SamDynaElementService } from './sam-dyna-element-service';
     FlexLayoutModule,
   ],
   providers: [
-    SamDynaElementService
+    SamDynaElementService,
+    SamDynaElementDataService
   ],
   bootstrap: [AppComponent],
   declarations: [

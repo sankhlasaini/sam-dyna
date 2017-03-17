@@ -3,7 +3,10 @@
 </p>-->
 
 <div>
-  <div [attr.for]="element.key" class="title">{{element.label}}</div>
+  <div fxLayout="row">
+    <div [attr.for]="element.key" class="title">{{element.label}}</div>
+    <!--<div [attr.for]="element.info">{{element.info}}</div>-->
+  </div>
   <div [ngSwitch]="element.controlType">
 
     <!--lables with icons-->
@@ -22,39 +25,46 @@
     </div>
 
     <!--data in chips-->
-
     <div *ngSwitchCase="'chips'">
-      <md-chip-list >
-        <md-chip *ngFor="let opt of element.options" selected="true" color="accent" class="chips">
-        <div class="chips">  {{opt.name}}</div>
+      <md-chip-list>
+        <md-chip *ngFor="let opt of element.options" selected="true" color="accent" class="chips" title='{{opt.data}} yr'>
+          <div class="chips"> {{opt.name}}</div>
         </md-chip>
       </md-chip-list>
     </div>
 
+
     <!--lable with title-->
-    <div *ngSwitchCase="'titleDiv'" fxLayout="row">
-      <div fxFlex="30">
-        {{element.title}}
-      </div>
-      <div fxFlex>
-        {{element.data}}
+    <div *ngSwitchCase="'titleDiv'">
+      <div *ngFor="let opt of element.options">
+        <div fxLayout="row" class="elements">
+          <div fxFlex="10" class="dataText">
+            {{opt.title}}
+          </div>
+          <div fxFlex></div>
+          <div fxFlex="90" class="dataText">
+            {{opt.data}}
+          </div>
+        </div>
       </div>
     </div>
+
+    <!--plain div-->
+    <div *ngSwitchCase="'div'">
+      <div *ngFor="let opt of element.options">
+        <div fxLayout="row" class="elements">
+          <div class="dataText">
+            {{opt.data}}
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     <div *ngSwitchCase="'input'">
       <md-input-container>
         <input mdInput name="componentProperty" [(ngModel)]="componentProperty" type="text" placeholder="Name">
       </md-input-container>
     </div>
-
-    <!--<div *ngSwitchCase="'personalInfo'" style="background-color: dimgray;color: white;width: 600px;height: 100px;">
-      <div *ngFor="let opt of question.options">
-        {{opt.key}} : {{opt.value}}
-      </div>
-    </div>
-    <div *ngSwitchCase="'skillsInfo'" style="background-color: dimgray;color: white;width: 600px;height: 100px;">
-      <div *ngFor="let opt of question.options">
-        {{opt.key}} : {{opt.value}}
-      </div>
-    </div>-->
   </div>
 </div>
