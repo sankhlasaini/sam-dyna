@@ -11,7 +11,7 @@ export class SamDynaElementService {
 
   getElements() {
 
-    let elementStandard: SamDynaElementBase<any>[] = [
+    const elementStandard: SamDynaElementBase<any>[] = [
       new SamDynaIconDiv({
         key: this.SamDynaElementDataService.getPersonalInfo().key,
         label: this.SamDynaElementDataService.getPersonalInfo().lable,

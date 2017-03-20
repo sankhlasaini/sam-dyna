@@ -10,7 +10,8 @@ import { Md2Module } from 'md2';
 import { SamDynaElementComponent } from './sam-dyna-element/sam-dyna-element.component';
 import { SamDynaViewComponent } from './sam-dyna-view/sam-dyna-view.component';
 import { SamDynaElementService } from './sam-dyna-element-service';
-import { SamDynaElementDataService} from './sam-dyna-element-data-service';
+import { SamDynaElementDataService } from './sam-dyna-element-data-service';
+import { SamarthyaWebComponentsModule } from 'samarthyaWebcomponent';
 
 @NgModule({
   imports: [
@@ -21,6 +22,7 @@ import { SamDynaElementDataService} from './sam-dyna-element-data-service';
     Md2Module.forRoot(),
     ReactiveFormsModule,
     FlexLayoutModule,
+    SamarthyaWebComponentsModule
   ],
   providers: [
     SamDynaElementService,

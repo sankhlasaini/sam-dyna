@@ -5,6 +5,9 @@
 <div>
   <div fxLayout="row">
     <div [attr.for]="element.key" class="title">{{element.label}}</div>
+    <a href="#"  class="editBtn" class="editBtn" (click)="getElement(element)">
+      <i class="material-icons">mode_edit</i>
+    </a>
     <!--<div [attr.for]="element.info">{{element.info}}</div>-->
   </div>
   <div [ngSwitch]="element.controlType">

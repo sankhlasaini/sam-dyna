@@ -24,3 +24,9 @@ margin-bottom: 30px;
     font-size: 15px;
    margin: 3px;
 }
+.editBtn{
+position: absolute;
+right: 20px;
+color: dimgray;
+    bottom:10px;
+}

@@ -12,8 +12,6 @@ export class SamDynaViewComponent implements OnInit {
   @Input() elements: SamDynaElementBase<any>[] = [];
 
   constructor() { }
-
   ngOnInit() {
   }
-
 }

@@ -4,8 +4,6 @@ Dynamic form  component (ROOT)
 </p>-->
 <div fxLayout="row" fxLayoutWrap>
   <md-card *ngFor="let element of elements" class="card" fxFlex>
-    <div>
-      <app-sam-dyna-element [element]="element"></app-sam-dyna-element>
-    </div>
+    <app-sam-dyna-element [element]="element"></app-sam-dyna-element>
   </md-card>
 </div>

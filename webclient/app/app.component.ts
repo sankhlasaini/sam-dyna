@@ -8,12 +8,11 @@ import { SamDynaElementService } from './sam-dyna-element-service';
 })
 export class AppComponent implements OnInit {
 
-elements : any[];
-constructor(service  : SamDynaElementService)
-{
-  this.elements = service.getElements();
-}
+  elements: any[];
+  constructor(service: SamDynaElementService) {
+    this.elements = service.getElements();
+  }
 
   ngOnInit() {
   }
- }
+}

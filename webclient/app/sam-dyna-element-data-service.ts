@@ -166,27 +166,27 @@ export class SamDynaElementDataService {
 
     getPersonalInfo() {
         return {
-            key: "personalinfo",
-            lable: "Personal Info",
-            order: "2",
+            key: 'personalinfo',
+            lable: 'Personal Info',
+            order: 2,
             options: [
-                { icon: "person", data: this.userData.personalinfo.name },
-                { icon: "email", data: this.userData.personalinfo.email },
-                { icon: "cake", data: this.userData.personalinfo.dob },
-                { icon: "phone", data: this.userData.personalinfo.contact.I + ', ' + this.userData.personalinfo.contact.II },
-                { icon: "location_on", data: this.userData.personalinfo.address.loc },
-                { icon: "chrome_reader_mode", data: this.userData.personalinfo.identity[1]['adhaar'] },
-                { icon: "record_voice_over", data: this.userData.personalinfo.preflang },
+                { icon: 'person', data: this.userData.personalinfo.name },
+                { icon: 'email', data: this.userData.personalinfo.email },
+                { icon: 'cake', data: this.userData.personalinfo.dob },
+                { icon: 'phone', data: this.userData.personalinfo.contact.I + ', ' + this.userData.personalinfo.contact.II },
+                { icon: 'location_on', data: this.userData.personalinfo.address.loc },
+                { icon: 'chrome_reader_mode', data: this.userData.personalinfo.identity[1]['adhaar'] },
+                { icon: 'record_voice_over', data: this.userData.personalinfo.preflang },
             ]
         }
     }
 
     getSummary() {
         return {
-            key: "summary",
-            lable: "Summary",
-            info:"status",
-            order: "1",
+            key: 'summary',
+            lable: 'Summary',
+            info: 'status',
+            order: 1,
             options:
             [
                 { data: 'I am a front end developer.I have an experience of 5 years in this profession.' }
@@ -195,15 +195,15 @@ export class SamDynaElementDataService {
     }
 
     getSkills() {
-        let skills = [];
+        const skills = [];
         this.userData.skills.forEach(element => {
             skills.push({ name: element.name, data: element.experience })
         });
 
         return {
-            key: "skills",
-            lable: "Skills",
-            order: "2",
+            key: 'skills',
+            lable: 'Skills',
+            order: 2,
             options: skills
         }
     }

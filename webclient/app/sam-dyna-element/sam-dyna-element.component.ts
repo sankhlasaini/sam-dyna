@@ -14,5 +14,7 @@ export class SamDynaElementComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  public getElement(card) {
+    console.log(card);
+  }
 }
